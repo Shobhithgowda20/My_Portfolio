@@ -50,7 +50,7 @@ Flask-based Leave Management System with Admin, HOD and Staff modules.
 
 - 🐙 GitHub: https://github.com/Shobhithgowda20
 - 🌐 Portfolio: https://shobhithgowda20.github.io/My_Portfolio/
-- 💼 LinkedIn: linkedin.com/in/shobhith-gowda-n
+- 💼 LinkedIn: https://linkedin.com/in/shobhith-gowda-n
 
 ---
 
