@@ -230,7 +230,7 @@ textarea {
 }
 
 .section {
-    padding: 100px 5%;
+    padding: 80px 5%;
 }
 
 .alternate-section {
@@ -553,6 +553,122 @@ footer {
     font-size: 14px;
 }
 
+/* =======================================================
+   CERTIFICATES SECTION
+======================================================= */
+
+.certificates {
+    padding: 30px 5% 70px;
+}
+
+.certificate-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.certificate-card {
+    width: 380px;          /* Fixed width */
+    padding: 30px;
+    background: var(--card-background);
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 14px;
+    text-align: center;
+}
+
+.certificate-card:hover{
+    transform: translateY(-8px);
+    border-color: var(--primary);
+}
+
+.certificate-card h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.certificate-card p {
+    color: var(--text);
+    margin-bottom: 25px;
+    padding: 0;
+    line-height: 1.7;
+}
+
+.certificate-button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: var(--primary);
+    color: #04101c;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.certificate-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25);
+}
+
+/* =========================
+   Education Section
+========================= */
+
+.education-container {
+    width: min(1100px, 90%);
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.education-card {
+    background: #111827;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 16px;
+    padding: 30px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-8px);
+    border-color: #3b82f6;
+    box-shadow: 0 12px 25px rgba(59, 130, 246, 0.15);
+}
+
+.education-year {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+}
+
+.education-card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.education-card h4 {
+    color: #9ca3af;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.education-card p {
+    color: #d1d5db;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .reveal {
     opacity: 0;
     transform: translateY(50px);
@@ -669,4 +785,102 @@ footer {
     .section {
         padding: 80px 5%;
     }
+}
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    background: #0b1220;
+    padding: 50px 5%;
+    text-align: center;
+    border-top: 1px solid rgba(59,130,246,0.2);
+}
+
+.footer h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #b8c1d1;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    color: #b8c1d1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #3b82f6;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    width: 45px;
+    height: 45px;
+    background: #111827;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background: #3b82f6;
+    transform: translateY(-5px);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #8b95a7;
+}
+
+/* =========================
+   Back To Top Button
+========================= */
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #3b82f6;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,.25);
+    transition: .3s ease;
+    z-index: 999;
+}
+
+.back-to-top:hover {
+    background: #2563eb;
+    transform: translateY(-5px);
 }
