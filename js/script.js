@@ -12,14 +12,6 @@ links.forEach(function (link) {
     });
 });
 
-const contactForm = document.querySelector(".contact-form");
-
-contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    alert("The contact form design is ready. We will connect it to email later.");
-});
-
 /* ---------------- Scroll Animation ---------------- */
 
 const revealElements = document.querySelectorAll(".reveal");
@@ -142,3 +134,38 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+// =========================
+// Contact Form
+// =========================
+
+const form = document.querySelector(".contact-form");
+const submitBtn = document.getElementById("submitBtn");
+
+if (form && submitBtn) {
+    form.addEventListener("submit", () => {
+        submitBtn.textContent = "Sending...";
+        submitBtn.disabled = true;
+    });
+}
+
+// =========================
+// Success Message
+// =========================
+
+const params = new URLSearchParams(window.location.search);
+const successMessage = document.getElementById("successMessage");
+
+if (params.get("success") === "true" && successMessage) {
+    successMessage.style.display = "block";
+
+    setTimeout(() => {
+        successMessage.style.display = "none";
+
+        window.history.replaceState(
+            {},
+            document.title,
+            window.location.pathname + "#contact"
+        );
+    }, 5000);
+}

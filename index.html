@@ -569,28 +569,49 @@
 
                 </div>
 
-                <form class="contact-form">
+                <form action="https://formsubmit.co/shobhithgowda204@gmail.com" method="POST" class="contact-form">
+
+                    <input
+                        type="hidden"
+                        name="_captcha"
+                        value="false"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Portfolio Contact Message"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://shobhithgowda20.github.io/My_Portfolio/thank-you.html"
+                    >
 
                     <input
                         type="text"
-                        placeholder="Your name"
+                        name="name"
+                        placeholder="Your Name"
                         required
                     >
 
                     <input
                         type="email"
-                        placeholder="Your email"
+                        name="email"
+                        placeholder="Your Email"
                         required
                     >
 
                     <textarea
+                        name="message"
                         rows="6"
-                        placeholder="Your message"
+                        placeholder="Your Message"
                         required
                     ></textarea>
 
-                    <button type="submit" class="primary-button">
-                        Send Message
+                    <button type="submit" class="primary-button" id="submitBtn">
+                     Send Message
                     </button>
 
                 </form>
@@ -647,8 +668,7 @@
       <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="js/script.js"></script>
-
+    <script src="js/script.js?v=3"></script>
 </body>
 
 </html>
